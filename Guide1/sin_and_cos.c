@@ -14,14 +14,15 @@ int main( void ){
     printf("\n");
     printf("ang     sin           cos\n");
     printf("----  ------------   ------------");
-
+    //Creating a writable file
+    FILE * fpointer = fopen("Trigonometry.txt", "w");
     for(int i= minor; i< (max+1); i+=gap){
         double angle = (double) i;
         double s = sin(angle);
         double c = cos(angle);
-        printf("\n%d     %1.8lf       %1.8lf",i,s,c);
+        fprintf("\n%d     %1.8lf       %1.8lf",i,s,c);
     }
-    printf("\n");
+    fclose(fpointer);
 
 
     return 0;
