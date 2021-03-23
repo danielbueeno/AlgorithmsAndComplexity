@@ -6,7 +6,7 @@ void cumSum(int a[],int b[]);
 
 int main(void){
     int a [] = {31,28,31,30,31,30,31,31,30,31,30,31};
-   printf("\n");
+    printf("\n");
     printArray('a',a);
     
     printf("\n");
@@ -18,8 +18,8 @@ int main(void){
 }
 
 void printArray(char s, int a[] ){
-    
-    printf("%d :\n",s);
+    char x = s;
+    printf("%c :\n",x);
    
     for (int i = 0; i < 12; i++)
     {
